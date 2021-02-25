@@ -19,6 +19,14 @@ app.use(morgan(morganOption));
 app.use(helmet());
 app.use(cors());
 
+//Basic Hello Route Test
+ app.get('/', (req, res, next) => {  
+      res.status(200)
+      res.json('Hello World')
+  })
+
+
+
 
 /*----------Folder HTTP Method Routes------------*/
 
